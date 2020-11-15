@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mycolor_fragment"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:elevation="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/students_with_phone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:elevation="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/computer_logical_organization" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/frameLayout2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+
+                android:elevation="5dp">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:fontFamily="casual"
+                    android:inputType="textCapWords|textAutoComplete|textMultiLine|textLongMessage"
+                    android:isScrollContainer="true"
+                    android:scrollIndicators="bottom|right"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:text="The project will have a mobile version only for users who are students and a windows desktop version for both the offices and the students. The main features of the project are listed below:   Sending Notifications to the students When a student applied to replace his/her ID the registrar will check their ID and it will send notification for students.   Sending messages When the registrar received an application from students it will send a message for all offices that are concerned about the students ID.   Provide backup The faculty can take backup continuously to insure the student’s information.   Search the lost student’s ID When a student applied to replace their ID the registrar will check their ID and if their ID is somewhere, then the registrar will have sent a notification for students to unfold where their ID is located."
+                    android:textAlignment="center"
+                    android:textColor="@color/mycolor_background"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:focusable="false"
+                    />
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>
